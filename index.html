@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>George Edgell — Bespoke Painting Commissions</title>
+<style>
+:root{
+  --paper:#f4efe7; --ink:#181713; --muted:#6e675e; --line:#d8cec1; --cream:#fbf8f2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}
+.wrap{width:min(1320px,92vw);margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-size:22px}
+nav{display:flex;gap:26px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+nav a{text-decoration:none}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:72px 0 96px}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0}
+h1{font-size:clamp(58px,7.3vw,116px);line-height:.9;letter-spacing:-.055em}
+.hero p{font-size:18px;line-height:1.7;color:#504a43;max-width:620px;margin:28px 0}
+.hero-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: contain;
+  display: block;
+}
+.hero-image:before{content:"YOUR FEATURED PAINTING";font-family:Georgia,serif;font-size:28px;color:#f8f2e8}
+.btn{display:inline-block;padding:15px 20px;border:1px solid var(--ink);text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.btn.primary{background:var(--ink);color:white}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.section{padding:110px 0;border-top:1px solid var(--line)}
+.heading{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin-bottom:55px}
+.heading h2{font-size:clamp(44px,5vw,78px);line-height:.95;letter-spacing:-.04em}
+.heading p{max-width:650px;line-height:1.75;color:#5c554d}
+.gallery{display:grid;grid-template-columns:1.08fr .92fr .92fr;gap:18px;align-items:start}
+.art{background:var(--cream)}
+.img{display:grid;place-items:center;background:#a89482;color:#f9f5ef;font-family:Georgia,serif;font-size:22px;aspect-ratio:4/5}
+.art:nth-child(2) .img{aspect-ratio:1/1;background:#8f8175}
+.art:nth-child(3) .img{aspect-ratio:3/4;background:#b5a18d}
+.meta{padding:14px 2px 0}
+.meta strong{font-family:Georgia,serif;font-size:20px;font-weight:400}
+.meta span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
+.steps,.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{border-top:1px solid var(--ink);padding-top:25px}
+.num{font-family:Georgia,serif;font-size:34px}
+.step h3{font-size:29px;margin:38px 0 12px}
+.step p,.price p{line-height:1.7;color:#5d564e}
+.quote{background:var(--ink);color:var(--cream);padding:90px 7vw;display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:end}
+.quote blockquote{font-family:Georgia,serif;font-size:clamp(38px,5vw,76px);line-height:1.05;letter-spacing:-.035em;margin:0}
+.quote small{color:#c8bdb1;line-height:1.7}
+.price{background:var(--cream);padding:28px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}
+.price h3{font-size:30px}
+.amount{font-family:Georgia,serif;font-size:42px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center}
+.artist-photo{min-height:620px;background:#998b7d;display:grid;place-items:center;color:#f8f3ec;font-family:Georgia,serif;font-size:24px}
+.about h2{font-size:clamp(48px,5vw,82px);line-height:.95;margin:14px 0 28px}
+.about p{font-size:18px;line-height:1.75;color:#575149}
+.contact{text-align:center;padding:120px 0 135px}
+.contact h2{font-size:clamp(60px,8vw,124px);line-height:.88;letter-spacing:-.055em}
+.contact p{max-width:650px;margin:30px auto;line-height:1.75;color:#5c554d}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:12px}
+.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){
+ nav{display:none}
+ .hero,.heading,.quote,.about{grid-template-columns:1fr}
+ .hero-image{min-height:520px}
+ .gallery,.steps,.prices{grid-template-columns:1fr}
+ .gallery{gap:44px}
+ .section{padding:78px 0}
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="logo">George Edgell</div>
+  <nav>
+    <a href="#work">Commissions</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Enquire</a>
+  </nav>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">Brighton, England · Bespoke painting commissions</div>
+    <h1>Paintings made to remember.</h1>
+    <p>I create one-of-a-kind paintings of people, pets and meaningful places — made from your photographs and painted to preserve the character, feeling and little details you never want to lose.</p>
+    <div class="actions">
+      <a class="btn primary" href="#contact">Start a commission</a>
+      <a class="btn" href="#work">View recent work</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="images/geopfp.jpeg" alt="Featured painting">
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="heading">
+      <div class="eyebrow">Selected commissions</div>
+      <div>
+        <h2>Made from your photographs, painted by hand.</h2>
+        <p>Every commission begins with a story. Whether it is a beloved dog, a family portrait or someone you want to keep close, each painting is built around the feeling you want it to hold.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <article class="art"><div class="img">PET PORTRAIT</div><div class="meta"><strong>Alfie</strong><span>Oil on canvas · Private commission</span></div></article>
+      <article class="art"><div class="img">PORTRAIT</div><div class="meta"><strong>Sunday Light</strong><span>Portrait commission</span></div></article>
+      <article class="art"><div class="img">MEMORIAL</div><div class="meta"><strong>For Dad</strong><span>Memorial portrait</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="section">
+  <div class="wrap">
+    <div class="heading"><div class="eyebrow">How it works</div><h2>A simple, personal commission process.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Tell me the story</h3><p>Send your favourite photographs, preferred size and anything you want the painting to capture.</p></div>
+      <div class="step"><div class="num">02</div><h3>I paint your piece</h3><p>We agree the composition, scale and timing, then I create your painting by hand in Brighton.</p></div>
+      <div class="step"><div class="num">03</div><h3>Your painting comes home</h3><p>Your finished artwork is carefully packed and delivered, ready to become part of your home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <blockquote>“Not just a likeness — something that feels like them.”</blockquote>
+  <small>Replace this with a short client testimonial once you have one. Until then it works as a statement of your approach.</small>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="heading">
+      <div class="eyebrow">Commission guide</div>
+      <div><h2>Choose a starting point.</h2><p>These are placeholder guide prices. Final quotes can depend on dimensions, number of subjects, complexity and framing.</p></div>
+    </div>
+    <div class="prices">
+      <div class="price"><div><h3>Small study</h3><p>One subject, intimate scale. Ideal for a pet portrait or thoughtful gift.</p></div><div class="amount">From £250</div></div>
+      <div class="price"><div><h3>Signature portrait</h3><p>A more detailed piece for one or two subjects.</p></div><div class="amount">From £450</div></div>
+      <div class="price"><div><h3>Heirloom piece</h3><p>Large-format or multi-subject work designed as a lasting centrepiece.</p></div><div class="amount">From £750</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap about">
+    <div class="artist-photo">YOUR STUDIO / PORTRAIT</div>
+    <div>
+      <div class="eyebrow">About the artist</div>
+      <h2>Based in Brighton, painting what matters.</h2>
+      <p>I’m a Brighton-based artist creating bespoke paintings of people, pets and meaningful moments. My commissions are made to feel personal rather than posed — capturing expression, character and the quiet details that make a subject instantly recognisable to the people who love them.</p>
+      <p>From joyful gifts to memorial paintings, each piece is individually made and designed to become part of your home and your family story.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="wrap contact">
+  <div class="eyebrow">Commission enquiries</div>
+  <h2>Have someone in mind?</h2>
+  <p>Send a few photographs and tell me what you would love to have painted. I’ll come back with ideas for size, composition and a personal quote.</p>
+  <a class="btn primary" href="mailto:hello@yourname.com">hello@yourname.com</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer"><span>© 2026 Your Name · Brighton, England</span><span>Instagram · Email · Commission terms</span></div>
+</footer>
+</body>
+</html>
