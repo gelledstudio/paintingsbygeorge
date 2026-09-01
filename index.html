@@ -1,172 +1,37 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>George Edgell — Bespoke Painting Commissions</title>
-<style>
-:root{
-  --paper:#f4efe7; --ink:#181713; --muted:#6e675e; --line:#d8cec1; --cream:#fbf8f2;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
-a{color:inherit}
-.wrap{width:min(1320px,92vw);margin:auto}
-header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-.logo{font-family:Georgia,serif;font-size:22px}
-nav{display:flex;gap:26px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
-nav a{text-decoration:none}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:72px 0 96px}
-.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0}
-h1{font-size:clamp(58px,7.3vw,116px);line-height:.9;letter-spacing:-.055em}
-.hero p{font-size:18px;line-height:1.7;color:#504a43;max-width:620px;margin:28px 0}
-.hero-image img {
-  width: 100%;
-  height: 700px;
-  object-fit: contain;
-  display: block;
-}
-.hero-image:before{content:"YOUR FEATURED PAINTING";font-family:Georgia,serif;font-size:28px;color:#f8f2e8}
-.btn{display:inline-block;padding:15px 20px;border:1px solid var(--ink);text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
-.btn.primary{background:var(--ink);color:white}
-.actions{display:flex;gap:14px;flex-wrap:wrap}
-.section{padding:110px 0;border-top:1px solid var(--line)}
-.heading{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin-bottom:55px}
-.heading h2{font-size:clamp(44px,5vw,78px);line-height:.95;letter-spacing:-.04em}
-.heading p{max-width:650px;line-height:1.75;color:#5c554d}
-.gallery{display:grid;grid-template-columns:1.08fr .92fr .92fr;gap:18px;align-items:start}
-.art{background:var(--cream)}
-.img{display:grid;place-items:center;background:#a89482;color:#f9f5ef;font-family:Georgia,serif;font-size:22px;aspect-ratio:4/5}
-.art:nth-child(2) .img{aspect-ratio:1/1;background:#8f8175}
-.art:nth-child(3) .img{aspect-ratio:3/4;background:#b5a18d}
-.meta{padding:14px 2px 0}
-.meta strong{font-family:Georgia,serif;font-size:20px;font-weight:400}
-.meta span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
-.steps,.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.step{border-top:1px solid var(--ink);padding-top:25px}
-.num{font-family:Georgia,serif;font-size:34px}
-.step h3{font-size:29px;margin:38px 0 12px}
-.step p,.price p{line-height:1.7;color:#5d564e}
-.quote{background:var(--ink);color:var(--cream);padding:90px 7vw;display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:end}
-.quote blockquote{font-family:Georgia,serif;font-size:clamp(38px,5vw,76px);line-height:1.05;letter-spacing:-.035em;margin:0}
-.quote small{color:#c8bdb1;line-height:1.7}
-.price{background:var(--cream);padding:28px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}
-.price h3{font-size:30px}
-.amount{font-family:Georgia,serif;font-size:42px}
-.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center}
-.artist-photo{min-height:620px;background:#998b7d;display:grid;place-items:center;color:#f8f3ec;font-family:Georgia,serif;font-size:24px}
-.about h2{font-size:clamp(48px,5vw,82px);line-height:.95;margin:14px 0 28px}
-.about p{font-size:18px;line-height:1.75;color:#575149}
-.contact{text-align:center;padding:120px 0 135px}
-.contact h2{font-size:clamp(60px,8vw,124px);line-height:.88;letter-spacing:-.055em}
-.contact p{max-width:650px;margin:30px auto;line-height:1.75;color:#5c554d}
-footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:12px}
-.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:900px){
- nav{display:none}
- .hero,.heading,.quote,.about{grid-template-columns:1fr}
- .hero-image{min-height:520px}
- .gallery,.steps,.prices{grid-template-columns:1fr}
- .gallery{gap:44px}
- .section{padding:78px 0}
-}
-</style>
-</head>
-<body>
-<header class="wrap">
-  <div class="logo">Paintings By George</div>
-  <nav>
-    <a href="#work">Commissions</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Enquire</a>
-  </nav>
-</header>
-
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Bespoke painting commissions of people, pets and meaningful moments, created in Brighton, England."><title>Your Name — Bespoke Painting Commissions</title><style>
+:root{--paper:#f4efe7;--ink:#181713;--muted:#6e675e;--line:#d8cec1;--cream:#fbf8f2;--dark:#181713}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}body.no-scroll{overflow:hidden}a{color:inherit}button{font:inherit}.wrap{width:min(1240px,90vw);margin:auto}header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-family:Georgia,serif;font-size:22px}nav{display:flex;gap:28px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}nav a{text-decoration:none}nav a:hover{opacity:.5}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0}h1{font-size:clamp(52px,6.6vw,104px);line-height:.9;letter-spacing:-.055em;margin-top:18px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:72px 0 96px}.hero p{font-size:17px;line-height:1.7;color:#504a43;max-width:620px;margin:28px 0}.hero-image{min-height:560px;background:#d8cec1;overflow:hidden}.hero-image img{width:100%;height:560px;display:block;object-fit:cover}.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-block;padding:15px 20px;border:1px solid var(--ink);text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:.25s}.btn:hover{background:var(--ink);color:#fff}.btn.primary{background:var(--ink);color:#fff}.btn.primary:hover{background:transparent;color:var(--ink)}.section{padding:110px 0;border-top:1px solid var(--line)}.heading{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin-bottom:55px}.heading h2,.testimonial-intro h2{font-size:clamp(40px,4.5vw,70px);line-height:.95;letter-spacing:-.04em}.heading p{max-width:650px;line-height:1.75;color:#5c554d;margin:22px 0 0}.gallery-header{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:30px}.gallery-controls{display:flex;gap:8px}.gallery-arrow{width:52px;height:52px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-size:24px}.gallery-arrow:hover:not(:disabled){background:var(--ink);color:#fff}.gallery-arrow:disabled{opacity:.28;cursor:default}.gallery{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:4px 0 24px}.gallery::-webkit-scrollbar{display:none}.art{flex:0 0 min(40vw,520px);scroll-snap-align:start;cursor:pointer}.art-image{overflow:hidden;background:#b7a697;position:relative}.art-image img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1)}.art:nth-child(2n) .art-image img{aspect-ratio:1}.art:nth-child(3n) .art-image img{aspect-ratio:3/4}.art:hover .art-image img{transform:scale(1.035)}.art-image:after{content:'View';position:absolute;right:16px;bottom:16px;padding:9px 12px;background:rgba(255,255,255,.9);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none}.art:hover .art-image:after{opacity:1;transform:translateY(0)}.meta{padding:15px 2px 0}.meta strong{font-family:Georgia,serif;font-size:19px;font-weight:400}.meta span{display:block;font-size:12px;color:var(--muted);margin-top:5px}.gallery-hint{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.steps,.testimonial-list,.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{border-top:1px solid var(--ink);padding-top:25px}.num{font-family:Georgia,serif;font-size:34px}.step h3{font-size:27px;margin:34px 0 12px}.step p,.price p{line-height:1.7;color:#5d564e;max-width:380px}.testimonials{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:110px 0}.testimonial-intro{display:grid;grid-template-columns:1fr 2fr;gap:40px;margin-bottom:60px}.testimonial{border-top:1px solid var(--ink);padding:28px 0 0}.testimonial blockquote{font-family:Georgia,serif;font-size:25px;line-height:1.25;margin:0 0 28px}.testimonial cite{font-size:11px;font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.quote{background:var(--dark);color:var(--cream);padding:90px 7vw;display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:end}.quote blockquote{font-family:Georgia,serif;font-size:clamp(38px,5vw,76px);line-height:1.05;letter-spacing:-.035em;margin:0}.quote small{color:#c8bdb1;line-height:1.7}.price{background:var(--cream);padding:28px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}.price h3{font-size:28px}.amount{font-family:Georgia,serif;font-size:39px}.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center}.artist-photo{min-height:560px;background:#998b7d;overflow:hidden}.artist-photo img{width:100%;height:560px;display:block;object-fit:cover}.about h2{font-size:clamp(44px,4.5vw,74px);line-height:.95;margin:14px 0 28px}.about p{font-size:17px;line-height:1.75;color:#575149}.contact{text-align:center;padding:120px 0 135px}.contact h2{font-size:clamp(54px,7.2vw,112px);line-height:.88;letter-spacing:-.055em}.contact p{max-width:650px;margin:30px auto;line-height:1.75;color:#5c554d}footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:12px}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.lightbox{position:fixed;inset:0;z-index:1000;background:rgba(15,14,12,.96);display:none;align-items:center;justify-content:center;padding:50px}.lightbox.active{display:flex}.lightbox-content{max-width:94vw;max-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center}.lightbox img{max-width:94vw;max-height:82vh;width:auto;height:auto;display:block;object-fit:contain}.lightbox-caption{color:#fff;font-family:Georgia,serif;font-size:20px;margin-top:14px;text-align:center}.lightbox-details{color:#cfc8bf;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-top:6px;text-align:center}.lightbox-close{position:absolute;top:22px;right:30px;width:48px;height:48px;border:1px solid rgba(255,255,255,.6);background:transparent;color:#fff;font-size:28px;cursor:pointer}.lightbox-close:hover,.lightbox-nav:hover{background:#fff;color:var(--ink)}.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border:1px solid rgba(255,255,255,.6);background:transparent;color:#fff;cursor:pointer;font-size:25px}.lightbox-prev{left:25px}.lightbox-next{right:25px}.menu-toggle{display:none;width:44px;height:44px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}.menu-toggle span{display:block;width:20px;height:1px;background:currentColor;transition:.25s}.menu-toggle.active span:first-child{transform:translateY(3px) rotate(45deg)}.menu-toggle.active span:last-child{transform:translateY(-3px) rotate(-45deg)}.mobile-menu{display:none}.back-to-top{position:fixed;right:24px;bottom:24px;z-index:900;width:50px;height:50px;border:1px solid var(--ink);background:var(--cream);color:var(--ink);cursor:pointer;font-size:22px;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,visibility .25s,transform .25s}.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}.back-to-top:hover{background:var(--ink);color:#fff}@media(max-width:900px){header{height:70px}nav{display:none}.menu-toggle{display:flex}.mobile-menu{position:fixed;inset:70px 0 auto 0;z-index:950;background:var(--cream);border-bottom:1px solid var(--line);padding:24px 4vw;display:flex;flex-direction:column;gap:0;opacity:0;visibility:hidden;transform:translateY(-10px);transition:.25s}.mobile-menu.active{opacity:1;visibility:visible;transform:translateY(0)}.mobile-menu a{padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase}.mobile-menu a:last-child{border-bottom:0}.back-to-top{right:16px;bottom:16px;width:46px;height:46px}.hero,.heading,.testimonial-intro,.quote,.about{grid-template-columns:1fr}.hero{padding:55px 0 70px;gap:45px}.hero-image,.hero-image img{min-height:520px;height:520px}.section,.testimonials{padding:78px 0}.gallery-header{align-items:center}.gallery-arrow{width:45px;height:45px}.art{flex-basis:78vw}.steps,.testimonial-list,.prices{grid-template-columns:1fr;gap:45px}.quote{padding:75px 6vw;gap:35px}.artist-photo,.artist-photo img{min-height:500px;height:500px}.contact{padding:85px 0 100px}.lightbox{padding:30px 18px}.lightbox img{max-width:90vw;max-height:76vh}.lightbox-prev{left:12px}.lightbox-next{right:12px}.lightbox-nav{width:42px;height:42px}}@media(max-width:500px){h1{font-size:52px}.hero-image,.hero-image img{min-height:390px;height:390px}.art{flex-basis:80vw}.gallery-hint{display:none}.lightbox-caption{font-size:17px}}
+</style></head><body>
+<header class="wrap"><div class="logo">YOUR NAME</div><nav><a href="#work">Commissions</a><a href="#process">Process</a><a href="#testimonials">Testimonials</a><a href="#about">About</a><a href="#contact">Enquire</a></nav><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></header><div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="#work">Commissions</a><a href="#process">Process</a><a href="#testimonials">Testimonials</a><a href="#about">About</a><a href="#contact">Enquire</a></div>
 <main>
-<section class="wrap hero">
-  <div>
-    <div class="eyebrow">Brighton, England · Bespoke painting commissions</div>
-    <h1>Paintings made to remember.</h1>
-    <p>I create one-of-a-kind paintings of people, pets and meaningful places — made from your photographs and painted to preserve the character, feeling and little details you never want to lose.</p>
-    <div class="actions">
-      <a class="btn primary" href="#contact">Start a commission</a>
-      <a class="btn" href="#work">View recent work</a>
-    </div>
-  </div>
-  <div class="hero-image">
-    <img src="images/winston.jpeg" alt="Featured painting">
-  </div>
-</section>
+<section class="wrap hero"><div><div class="eyebrow">Brighton, England · Bespoke painting commissions</div><h1>Paintings made to remember.</h1><p>I create one-of-a-kind paintings of people, pets and meaningful places — made from your photographs and painted to preserve the character, feeling and little details you never want to lose.</p><div class="actions"><a class="btn primary" href="#contact">Start a commission</a><a class="btn" href="#work">View recent work</a></div></div><div class="hero-image"><img src="images/featured-painting.jpg" alt="Featured painting"></div></section>
+<section id="work" class="section"><div class="wrap"><div class="heading"><div class="eyebrow">Selected commissions</div><div><h2>Made from your photographs, painted by hand.</h2><p>Every commission begins with a story. Whether it is a beloved dog, a family portrait or someone you want to keep close, each painting is built around the feeling you want it to hold.</p></div></div><div class="gallery-header"><div class="gallery-hint">Drag to explore · Click any painting to enlarge</div><div class="gallery-controls"><button class="gallery-arrow" id="galleryPrev" aria-label="Previous artworks">←</button><button class="gallery-arrow" id="galleryNext" aria-label="Next artworks">→</button></div></div><div class="gallery" id="gallery">
+<article class="art" data-image="images/alfie.jpg" data-title="Alfie" data-details="Oil on canvas · Private commission"><div class="art-image"><img src="images/alfie.jpg" alt="Pet portrait of Alfie" loading="lazy"></div><div class="meta"><strong>Alfie</strong><span>Oil on canvas · Private commission</span></div></article>
+<article class="art" data-image="images/sunday-light.jpg" data-title="Sunday Light" data-details="Portrait commission"><div class="art-image"><img src="images/sunday-light.jpg" alt="Portrait painting titled Sunday Light" loading="lazy"></div><div class="meta"><strong>Sunday Light</strong><span>Portrait commission</span></div></article>
+<article class="art" data-image="images/for-dad.jpg" data-title="For Dad" data-details="Memorial portrait"><div class="art-image"><img src="images/for-dad.jpg" alt="Memorial portrait painting" loading="lazy"></div><div class="meta"><strong>For Dad</strong><span>Memorial portrait</span></div></article>
+<article class="art" data-image="images/two-of-us.jpg" data-title="The Two of Us" data-details="Oil on canvas · Couple's portrait"><div class="art-image"><img src="images/two-of-us.jpg" alt="Couple portrait painting" loading="lazy"></div><div class="meta"><strong>The Two of Us</strong><span>Oil on canvas · Couple's portrait</span></div></article>
+<article class="art" data-image="images/home.jpg" data-title="Home" data-details="Bespoke place commission"><div class="art-image"><img src="images/home.jpg" alt="Bespoke painting of a meaningful place" loading="lazy"></div><div class="meta"><strong>Home</strong><span>Bespoke place commission</span></div></article>
+<article class="art" data-image="images/milo.jpg" data-title="Milo" data-details="Oil on panel · Pet commission"><div class="art-image"><img src="images/milo.jpg" alt="Pet portrait of Milo" loading="lazy"></div><div class="meta"><strong>Milo</strong><span>Oil on panel · Pet commission</span></div></article>
+</div></div></section>
+<section id="process" class="section"><div class="wrap"><div class="heading"><div class="eyebrow">How it works</div><div><h2>A simple, personal commission process.</h2></div></div><div class="steps"><div class="step"><div class="num">01</div><h3>Tell me the story</h3><p>Send your favourite photographs, preferred size and anything you want the painting to capture.</p></div><div class="step"><div class="num">02</div><h3>I paint your piece</h3><p>We agree the composition, scale and timing, then I create your painting by hand in Brighton.</p></div><div class="step"><div class="num">03</div><h3>Your painting comes home</h3><p>Your finished artwork is carefully packed and delivered, ready to become part of your home.</p></div></div></div></section>
+<section class="testimonials" id="testimonials"><div class="wrap"><div class="testimonial-intro"><div class="eyebrow">Kind words</div><div><h2>Paintings people keep close.</h2></div></div><div class="testimonial-list"><article class="testimonial"><blockquote>“It was even more beautiful than I imagined. You captured her expression perfectly.”</blockquote><cite>— Sarah · Pet portrait commission</cite></article><article class="testimonial"><blockquote>“The most thoughtful gift we could have given. It feels incredibly personal and completely like him.”</blockquote><cite>— James · Family portrait</cite></article><article class="testimonial"><blockquote>“From the first conversation to receiving the painting, the whole process felt so personal.”</blockquote><cite>— Emily · Bespoke commission</cite></article></div></div></section>
+<section class="quote"><blockquote>“Not just a likeness — something that feels like them.”</blockquote><small>Every painting is individually made with the intention of preserving something meaningful: a face, a companion, a place, or a moment you never want to forget.</small></section>
+<section class="section"><div class="wrap"><div class="heading"><div class="eyebrow">Commission guide</div><div><h2>Choose a starting point.</h2><p>These are guide prices. Final quotes can depend on dimensions, number of subjects, complexity and framing.</p></div></div><div class="prices"><div class="price"><div><h3>Small study</h3><p>One subject, intimate scale. Ideal for a pet portrait or thoughtful gift.</p></div><div class="amount">From £250</div></div><div class="price"><div><h3>Signature portrait</h3><p>A more detailed piece for one or two subjects.</p></div><div class="amount">From £450</div></div><div class="price"><div><h3>Heirloom piece</h3><p>Large-format or multi-subject work designed as a lasting centrepiece.</p></div><div class="amount">From £750</div></div></div></div></section>
+<section id="about" class="section"><div class="wrap about"><div class="artist-photo"><img src="images/studio.jpg" alt="Artist in the studio" loading="lazy"></div><div><div class="eyebrow">About the artist</div><h2>Based in Brighton, painting what matters.</h2><p>I’m a Brighton-based artist creating bespoke paintings of people, pets and meaningful moments. My commissions are made to feel personal rather than posed — capturing expression, character and the quiet details that make a subject instantly recognisable to the people who love them.</p><p>From joyful gifts to memorial paintings, each piece is individually made and designed to become part of your home and your family story.</p></div></div></section>
+<section id="contact" class="wrap contact"><div class="eyebrow">Commission enquiries</div><h2>Have someone in mind?</h2><p>Send a few photographs and tell me what you would love to have painted. I’ll come back with ideas for size, composition and a personal quote.</p><a class="btn primary" href="mailto:hello@yourname.com">hello@yourname.com</a></section>
+</main><footer><div class="wrap footer"><span>© 2026 Your Name · Brighton, England</span><span>Instagram · Email · Commission terms</span></div></footer>
+<button class="back-to-top" id="backToTop" aria-label="Scroll to top">↑</button><div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer"><button class="lightbox-close" id="lightboxClose" aria-label="Close artwork">×</button><button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous artwork">←</button><div class="lightbox-content"><img id="lightboxImage" src="" alt=""><div class="lightbox-caption" id="lightboxCaption"></div><div class="lightbox-details" id="lightboxDetails"></div></div><button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next artwork">→</button></div>
+<script>
+const gallery=document.getElementById('gallery'),galleryPrev=document.getElementById('galleryPrev'),galleryNext=document.getElementById('galleryNext');function updateGalleryButtons(){const max=gallery.scrollWidth-gallery.clientWidth;galleryPrev.disabled=gallery.scrollLeft<=5;galleryNext.disabled=gallery.scrollLeft>=max-5}function scrollGallery(dir){const card=gallery.querySelector('.art');if(!card)return;gallery.scrollBy({left:dir*(card.getBoundingClientRect().width+20),behavior:'smooth'})}galleryPrev.addEventListener('click',()=>scrollGallery(-1));galleryNext.addEventListener('click',()=>scrollGallery(1));gallery.addEventListener('scroll',updateGalleryButtons);window.addEventListener('resize',updateGalleryButtons);updateGalleryButtons();
+const artworks=[...document.querySelectorAll('.art')],lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage'),lightboxCaption=document.getElementById('lightboxCaption'),lightboxDetails=document.getElementById('lightboxDetails'),lightboxClose=document.getElementById('lightboxClose'),lightboxPrev=document.getElementById('lightboxPrev'),lightboxNext=document.getElementById('lightboxNext');let currentArtwork=0;function showArtwork(i){if(!artworks.length)return;currentArtwork=(i+artworks.length)%artworks.length;const a=artworks[currentArtwork];lightboxImage.src=a.dataset.image;lightboxImage.alt=a.dataset.title;lightboxCaption.textContent=a.dataset.title;lightboxDetails.textContent=a.dataset.details}function openLightbox(i){showArtwork(i);lightbox.classList.add('active');document.body.classList.add('no-scroll');lightboxClose.focus()}function closeLightbox(){lightbox.classList.remove('active');document.body.classList.remove('no-scroll');lightboxImage.src=''}artworks.forEach((a,i)=>a.addEventListener('click',()=>openLightbox(i)));lightboxClose.addEventListener('click',closeLightbox);lightboxPrev.addEventListener('click',()=>showArtwork(currentArtwork-1));lightboxNext.addEventListener('click',()=>showArtwork(currentArtwork+1));lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});document.addEventListener('keydown',e=>{if(!lightbox.classList.contains('active'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')showArtwork(currentArtwork-1);if(e.key==='ArrowRight')showArtwork(currentArtwork+1)});let touchStartX=0;lightbox.addEventListener('touchstart',e=>{touchStartX=e.changedTouches[0].screenX},{passive:true});
 
-<section id="work" class="section">
-  <div class="wrap">
-    <div class="heading">
-      <div class="eyebrow">Selected commissions</div>
-      <div>
-        <h2>Made from your photographs, painted by hand.</h2>
-        <p>Every commission begins with a story. Whether it is a beloved dog, a family portrait or someone you want to keep close, each painting is built around the feeling you want it to hold.</p>
-      </div>
-    </div>
-    <div class="gallery">
-      <article class="art"><div class="img">PET PORTRAIT</div><div class="meta"><strong>Alfie</strong><span>Oil on canvas · Private commission</span></div></article>
-      <article class="art"><div class="img">PORTRAIT</div><div class="meta"><strong>Sunday Light</strong><span>Portrait commission</span></div></article>
-      <article class="art"><div class="img">MEMORIAL</div><div class="meta"><strong>For Dad</strong><span>Memorial portrait</span></div></article>
-    </div>
-  </div>
-</section>
-
-<section id="process" class="section">
-  <div class="wrap">
-    <div class="heading"><div class="eyebrow">How it works</div><h2>A simple, personal commission process.</h2></div>
-    <div class="steps">
-      <div class="step"><div class="num">01</div><h3>Tell me the story</h3><p>Send your favourite photographs, preferred size and anything you want the painting to capture.</p></div>
-      <div class="step"><div class="num">02</div><h3>I paint your piece</h3><p>We agree the composition, scale and timing, then I create your painting by hand in Brighton.</p></div>
-      <div class="step"><div class="num">03</div><h3>Your painting comes home</h3><p>Your finished artwork is carefully packed and delivered, ready to become part of your home.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="quote">
-  <blockquote>“Not just a likeness — something that feels like them.”</blockquote>
-  <small>Replace this with a short client testimonial once you have one. Until then it works as a statement of your approach.</small>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="heading">
-      <div class="eyebrow">Commission guide</div>
-      <div><h2>Choose a starting point.</h2><p>These are placeholder guide prices. Final quotes can depend on dimensions, number of subjects, complexity and framing.</p></div>
-    </div>
-    <div class="prices">
-      <div class="price"><div><h3>Small study</h3><p>One subject, intimate scale. Ideal for a pet portrait or thoughtful gift.</p></div><div class="amount">From £250</div></div>
-      <div class="price"><div><h3>Signature portrait</h3><p>A more detailed piece for one or two subjects.</p></div><div class="amount">From £450</div></div>
-      <div class="price"><div><h3>Heirloom piece</h3><p>Large-format or multi-subject work designed as a lasting centrepiece.</p></div><div class="amount">From £750</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <div class="wrap about">
-    <div class="artist-photo">YOUR STUDIO / PORTRAIT</div>
-    <div>
-      <div class="eyebrow">About the artist</div>
-      <h2>Based in Brighton, painting what matters.</h2>
-      <p>I’m a Brighton-based artist creating bespoke paintings of people, pets and meaningful moments. My commissions are made to feel personal rather than posed — capturing expression, character and the quiet details that make a subject instantly recognisable to the people who love them.</p>
-      <p>From joyful gifts to memorial paintings, each piece is individually made and designed to become part of your home and your family story.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="wrap contact">
-  <div class="eyebrow">Commission enquiries</div>
-  <h2>Have someone in mind?</h2>
-  <p>Send a few photographs and tell me what you would love to have painted. I’ll come back with ideas for size, composition and a personal quote.</p>
-  <a class="btn primary" href="mailto:hello@yourname.com">hello@yourname.com</a>
-</section>
-</main>
-
-<footer>
-  <div class="wrap footer"><span>© 2026 Your Name · Brighton, England</span><span>Instagram · Email · Commission terms</span></div>
-</footer>
-</body>
-</html>
+const menuToggle=document.getElementById('menuToggle'),mobileMenu=document.getElementById('mobileMenu'),backToTop=document.getElementById('backToTop');
+function setMenu(open){mobileMenu.classList.toggle('active',open);menuToggle.classList.toggle('active',open);menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close menu':'Open menu');mobileMenu.setAttribute('aria-hidden',String(!open))}
+menuToggle.addEventListener('click',()=>setMenu(!mobileMenu.classList.contains('active')));
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+window.addEventListener('resize',()=>{if(window.innerWidth>900)setMenu(false)});
+function updateBackToTop(){const atBottom=window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-2;backToTop.classList.toggle('visible',atBottom)}
+window.addEventListener('scroll',updateBackToTop,{passive:true});
+window.addEventListener('resize',updateBackToTop);
+backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+updateBackToTop();lightbox.addEventListener('touchend',e=>{const d=e.changedTouches[0].screenX-touchStartX;if(Math.abs(d)<50)return;showArtwork(currentArtwork+(d<0?1:-1))},{passive:true});
+</script></body></html>
