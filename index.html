@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>George Edgell Paintings | Bespoke Oil Painting Commissions in Brighton</title>
+<meta name="description" content="Bespoke oil paintings of people, pets and places, painted by hand in Brighton, England.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1f2a;--mute:#4f5563;--line:#dfe2e6;--paper:#fbfbf9;--accent:#496655;--accent-d:#37503f;--mid:#a9c2b3;--tint:#dce6e1;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}body.modal-open{overflow:hidden}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}p{margin:0;color:var(--mute)}
+.wrap{max-width:1152px;margin:0 auto;padding:0 32px}section{padding:96px 0;scroll-margin-top:90px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.05;letter-spacing:-.01em}
+h1{font-size:clamp(48px,6.4vw,84px)}h2{font-size:clamp(36px,4.4vw,56px)}h3{font-size:24px}
+.lede{font-size:18px;max-width:560px}.label{font-size:15px;font-weight:500;color:var(--accent)}
+.btn{display:inline-block;border:2px solid var(--accent);border-radius:999px;padding:13px 30px;font:500 16px var(--sans);background:var(--accent);color:#fff;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn.yellow{background:var(--tint);border-color:var(--tint);color:var(--ink)}.btn.yellow:hover{background:#fff;border-color:#fff}
+.btn.ghost{background:none;color:var(--ink);border-color:var(--ink)}.btn.ghost:hover{background:var(--ink);color:#fff}
+:focus-visible{outline:3px solid var(--accent-d);outline-offset:3px}
+.skip-link{position:fixed;left:16px;top:-60px;z-index:1000;background:var(--ink);color:#fff;padding:10px 14px}.skip-link:focus{top:16px}
+
+header{position:sticky;top:0;z-index:50;background:rgba(251,251,249,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px 32px;padding-top:14px;padding-bottom:14px}
+.logo{font-size:19px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;line-height:1.2}
+
+nav{display:flex;align-items:center;gap:28px;font-size:16px;flex-wrap:wrap}nav a:not(.btn){padding:4px 0;border-bottom:2px solid transparent}nav a:not(.btn):hover{border-color:var(--mid)}nav .btn{padding:9px 22px;font-size:15px}
+
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.hero .text{display:flex;flex-direction:column;gap:26px;align-items:flex-start}
+.hero .img{height:600px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.facts{list-style:none;margin:6px 0 0;padding:0;display:flex;gap:10px 28px;flex-wrap:wrap;font-size:15px}.facts li{display:flex;align-items:center;gap:9px}.facts li:before{content:'';width:10px;height:10px;border-radius:50%;background:var(--accent-d)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}.hero .text,.hero .img{animation:rise .8s ease both}.hero .img{animation-delay:.15s}
+
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:48px}.sec-head p{max-width:420px}
+#work{padding-top:24px}
+.gallery-shell{position:relative}.gallery{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}.gallery::-webkit-scrollbar{display:none}.gallery figure{margin:0;flex:0 0 calc((100% - 56px)/3);scroll-snap-align:start}.arrow{position:absolute;top:calc(50% - 40px);z-index:3;width:46px;height:46px;border:0;border-radius:50%;background:var(--accent);color:#fff;font:400 30px/1 var(--serif);padding:0 0 4px;cursor:pointer;display:grid;place-items:center;box-shadow:0 2px 10px rgba(0,0,0,.18);transition:background .2s,opacity .2s}.arrow:hover{background:var(--accent-d)}.arrow:disabled{opacity:0;pointer-events:none}.gallery-prev{left:-23px}.gallery-next{right:-23px}
+.gallery button{display:block;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer}
+.gallery .img{display:block;aspect-ratio:4/5;background:#e9e9e6;overflow:hidden}
+.gallery img{transition:transform .5s ease}.gallery button:hover img{transform:scale(1.04)}
+.gallery figcaption{margin-top:14px;font:500 24px/1.2 var(--serif)}.gallery figcaption span{display:block;font:400 15px var(--sans);color:var(--mute)}
+
+.cta{background:var(--accent);color:#fff;padding:72px 0}.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}.cta h2{color:#fff}.cta p{color:#e3ece7;margin-top:12px;max-width:540px;font-size:18px}
+
+.process{display:grid;grid-template-columns:1fr 1.5fr;gap:72px;align-items:start}.sticky{position:sticky;top:120px;display:flex;flex-direction:column;gap:18px}
+.step{display:grid;grid-template-columns:76px 1fr;gap:20px;padding:28px 0;border-top:1px solid var(--line)}.step:last-child{border-bottom:1px solid var(--line)}
+.num{font:italic 500 56px/1 var(--serif);color:var(--accent)}
+.step h3{margin-bottom:6px}
+
+.reviews{background:var(--tint)}.reviews h2{margin-bottom:48px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.quotes blockquote{margin:0;border-top:6px solid var(--accent);padding-top:20px}
+blockquote p{font:500 22px/1.4 var(--serif);color:var(--ink)}cite{display:block;margin-top:14px;font-style:normal;font-size:15px;color:#2f4a40}
+
+.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.price{border-top:6px solid var(--accent);background:#fff;padding:28px 24px 30px;box-shadow:0 1px 0 var(--line),0 0 0 1px var(--line)}
+
+.price svg{display:block;width:100%;height:76px;margin-bottom:20px}.top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.cost{font:600 26px/1 var(--serif);color:var(--accent-d);white-space:nowrap}.cost small{font:400 14px var(--sans);color:var(--mute);margin-right:5px}.cost.alt{font:500 16px var(--sans)}.price .size{display:block;font-weight:500;color:var(--ink);margin:4px 0 8px}.price p{font-size:16px}
+.price rect{fill:var(--tint);stroke:var(--accent-d);stroke-width:1.5}.price:nth-child(4) rect{fill:none;stroke-dasharray:5 4}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about .img{height:520px}.about .text{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.ig{display:inline-flex;align-items:center;gap:10px;font-weight:500;color:var(--accent);border-bottom:2px solid var(--mid)}.ig:hover{color:var(--accent-d)}.ig svg{width:22px;height:22px;flex:none}
+
+.faq{display:grid;grid-template-columns:1fr 1.6fr;gap:72px}.faq .intro{display:flex;flex-direction:column;gap:16px}.faq .intro a{color:var(--accent);font-weight:500;border-bottom:2px solid var(--mid);align-self:flex-start}
+.faq-list{border-top:1px solid var(--ink)}.faq-item{border-bottom:1px solid var(--line)}.faq-item summary{cursor:pointer;list-style:none;padding:20px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;gap:16px}.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';color:var(--accent);font-size:26px;line-height:1}.faq-item[open] summary:after{content:'−';color:var(--accent-d)}.faq-item p{padding:0 40px 22px 0}
+
+.contact-box{background:#fff;box-shadow:0 0 0 1px var(--line);border-top:8px solid var(--accent);padding:64px;display:grid;grid-template-columns:1fr 1.2fr;gap:72px}
+.contact .intro{display:flex;flex-direction:column;gap:18px;align-items:flex-start}.mail{font:500 22px var(--serif);color:var(--accent);border-bottom:2px solid var(--mid)}
+form{display:flex;flex-direction:column;gap:26px;align-items:flex-start}.field{width:100%}
+label,legend{font-size:15px;font-weight:500;color:var(--ink)}legend{padding:0;margin-bottom:10px}fieldset{border:0;padding:0;margin:0;min-width:0;width:100%}
+input[type=text],input[type=email],input[type=date],textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);border:0;border-bottom:2px solid var(--line);background:transparent;padding:10px 0;min-height:44px;border-radius:0;transition:border-color .2s}input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}.chip{position:relative}.chip input{position:absolute;opacity:0;width:1px;height:1px}.chip span{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:8px 20px;font-size:16px;cursor:pointer;transition:.15s}.chip span:hover{border-color:var(--accent)}.chip input:checked+span{background:var(--accent);border-color:var(--accent);color:#fff}.chip input:focus-visible+span{outline:3px solid var(--accent-d);outline-offset:2px}
+
+footer{background:var(--ink);color:#c9ced9;padding:40px 0;font-size:15px}footer .wrap{display:flex;justify-content:space-between;gap:16px 32px;flex-wrap:wrap;align-items:center}footer b{font:500 16px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fff}footer a{border-bottom:2px solid var(--mid)}footer .links{display:flex;gap:24px}
+.back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border:0;border-radius:50%;background:var(--mid);color:var(--ink);font-size:20px;cursor:pointer;z-index:30;opacity:0;transform:translateY(12px);pointer-events:none;transition:.2s}.back-top.is-visible{opacity:1;transform:none;pointer-events:auto}
+
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(20,22,30,.95);display:grid;grid-template-columns:70px minmax(0,1fr) 70px;align-items:center;opacity:0;visibility:hidden;transition:.2s}.lightbox.is-open{opacity:1;visibility:visible}
+.lightbox-stage{position:relative;width:min(88vw,1100px);height:min(84vh,900px);margin:auto;display:grid;place-items:center}.lightbox img{width:auto;height:auto;max-width:100%;max-height:80vh;object-fit:contain}
+.lightbox button{border:0;background:none;color:#fff;cursor:pointer;font-size:42px;line-height:1;width:100%;height:100%}.lightbox button:hover{color:var(--mid)}.lightbox .lightbox-close{position:absolute;top:12px;right:14px;width:48px;height:48px;font-size:32px;z-index:2}
+.lightbox-caption{position:absolute;bottom:-8px;left:0;right:0;text-align:center;color:#fff;font-size:15px}.lightbox-count{position:absolute;top:22px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px}
+
+@media(max-width:900px){section{padding:64px 0}.hero,.about,.process,.faq,.contact-box{grid-template-columns:1fr;gap:44px}.hero .img{height:420px}.about .img{height:400px}.gallery{gap:20px}.gallery figure{flex-basis:calc((100% - 20px)/2)}.gallery-prev{left:6px}.gallery-next{right:6px}.quotes{grid-template-columns:1fr}.prices{grid-template-columns:repeat(2,1fr)}.sticky{position:static}.contact-box{padding:40px 28px}}
+@media(max-width:600px){.wrap{padding:0 20px}nav{gap:6px 18px;font-size:15px}.hero .img{height:340px}.gallery figure{flex-basis:82%}.prices{grid-template-columns:1fr}.step{grid-template-columns:56px 1fr}.num{font-size:44px}.lightbox{grid-template-columns:44px minmax(0,1fr) 44px}.lightbox-stage{width:90vw}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+.estimate{width:100%;background:var(--tint);border-left:6px solid var(--accent);padding:20px 24px}.estimate .label{font-size:15px;font-weight:500;color:var(--ink);display:block;margin-bottom:6px}.estimate .amount{font:600 30px/1.1 var(--serif);color:var(--accent-d)}.estimate .note{font-size:14px;color:var(--mute);margin-top:8px}
+</style>
+</head>
+<body><a class="skip-link" href="#top">Skip to content</a>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top">George Edgell Paintings</a>
+<nav><a href="#work">Work</a><a href="#process">Process</a><a href="#sizes">Sizes</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Enquire</a></nav>
+</div>
+</header>
+
+<main id="top">
+
+<section>
+<div class="wrap hero">
+<div class="text">
+<div class="label">Bespoke oil painting commissions in Brighton, UK</div>
+<h1>Paintings made to remember.</h1>
+<p class="lede">One-of-a-kind oil paintings of the people, pets and places you love, painted by hand from your photographs and memories. I can work from a single reference or bring several together into one considered composition.</p>
+<div class="actions"><a class="btn" href="#contact">Start a commission</a><a class="btn ghost" href="#work">See recent work</a></div>
+<ul class="facts"><li>Hand-painted in oils</li><li>Made in Brighton</li><li>UK and international delivery</li></ul>
+</div>
+<div class="img"><img src="images/crop.jpg" alt="A featured commissioned painting" fetchpriority="high"></div>
+</div>
+</section>
+
+<section id="work">
+<div class="wrap">
+<div class="sec-head"><h2>Recent commissions</h2><p>Scroll through, or select a painting to view it larger.</p></div>
+<div class="gallery-shell"><button class="arrow gallery-prev" type="button" aria-label="Previous paintings">‹</button><div class="gallery">
+<figure><button type="button" class="gallery-trigger" aria-label="View Winston painting larger"><span class="img"><img src="images/winston1.jpg" alt="Winston, oil on canvas" loading="lazy" decoding="async"></span></button><figcaption>Winston<span>Pet commission</span></figcaption></figure>
+<figure><button type="button" class="gallery-trigger" aria-label="View Portrait painting larger"><span class="img"><img src="images/gdad.jpg" alt="David, oil on canvas" loading="lazy" decoding="async"></span></button><figcaption>David<span>Private commission</span></figcaption></figure>
+<figure><button type="button" class="gallery-trigger" aria-label="View Annemarie and Tommy painting larger"><span class="img"><img src="images/maria.jpg" alt="Annemarie and Tommy, oil on canvas" loading="lazy" decoding="async"></span></button><figcaption>Annemarie &amp; Tommy<span>Private commission</span></figcaption></figure>
+<figure><button type="button" class="gallery-trigger" aria-label="View Cat painting larger"><span class="img"><img src="images/violet.jpg" alt="Violet, oil on canvas" loading="lazy" decoding="async"></span></button><figcaption>Violet<span>Pet commission</span></figcaption></figure>
+<figure><button type="button" class="gallery-trigger" aria-label="View Sally and Danial painting larger"><span class="img"><img src="images/michael.jpg" alt="Sally and Danial, oil on canvas" loading="lazy" decoding="async"></span></button><figcaption>Sally &amp; Danial<span>Double pet commission</span></figcaption></figure>
+<figure><button type="button" class="gallery-trigger" aria-label="View Cat painting larger"><span class="img"><img src="images/cat.jpg" alt="Luciek, oil on canvas" loading="lazy" decoding="async"></span></button><figcaption>Luciek<span>Pet commission</span></figcaption></figure>
+</div><button class="arrow gallery-next" type="button" aria-label="Next paintings">›</button></div>
+</div>
+</section>
+
+<div class="cta"><div class="wrap"><div><h2>Have someone or something in mind?</h2><p>Tell me what you'd like painted and I'll help you choose the right size, composition and approach.</p></div><a class="btn yellow" href="#contact">Start a commission</a></div></div>
+
+<section id="process">
+<div class="wrap process">
+<div class="sticky"><h2>How it works</h2><p class="lede">From choosing your photographs to receiving the finished painting, the process stays personal, clear and straightforward.</p></div>
+<div>
+<div class="step"><div class="num">1</div><div><h3>Send your idea</h3><p>Tell me who or what you'd like painted, your preferred size and any details that matter. Send as many photographs as you like and I'll help pick the strongest.</p></div></div>
+<div class="step"><div class="num">2</div><div><h3>Agree the composition</h3><p>I can paint from one photograph or combine people, pets and details from several. We settle the composition, size and timing before any paint is applied.</p></div></div>
+<div class="step"><div class="num">3</div><div><h3>I paint it</h3><p>Your painting is made by hand in my Brighton studio, with updates along the way.</p></div></div>
+<div class="step"><div class="num">4</div><div><h3>It comes home</h3><p>Once finished, your painting is carefully packaged for collection or delivery. Framing and delivery are included in your individual quote.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="reviews" id="reviews">
+<div class="wrap">
+<h2>Reviews</h2>
+<div class="quotes">
+<blockquote><p>“What a pleasure. You have captured both likenesses wonderfully well, and have shown the essence of both animals, showing their vivacity and character with your careful technique.”</p><cite>Michael, pet portrait</cite></blockquote>
+<blockquote><p>“I have just seen the most amazing picture of our Winston. It is stunning! You have captured his energy perfectly.”</p><cite>Claudine, pet portrait</cite></blockquote>
+<blockquote><p>“My Auntie's heart was full of gratitude and her eyes were wide with surprise, love and awe. So much joy has been shared through your works.”</p><cite>Maria, bespoke portrait</cite></blockquote>
+<blockquote><p>“I'm crying. I can't thank you enough for this beautiful painting of my violet. I can't believe how good it is, I'll treasure it forever.”</p><cite>Alfreye, pet portrait</cite></blockquote>
+</div>
+</div>
+</section>
+
+<section id="sizes">
+<div class="wrap">
+<div class="sec-head"><h2>Choose your size</h2><p>Guide prices are shown for each size. Your final quote depends on the number of subjects and level of detail.</p></div>
+<div class="prices">
+<div class="price"><svg viewBox="0 0 120 80" aria-hidden="true"><rect x="30" y="20" width="60" height="40"/></svg><div class="top"><h3>Small</h3><span class="cost"><small>from</small>£150</span></div><span class="size">30 × 20 cm</span><p>A compact format for a single subject or a thoughtful gift.</p></div>
+<div class="price"><svg viewBox="0 0 120 80" aria-hidden="true"><rect x="20" y="10" width="80" height="60"/></svg><div class="top"><h3>Medium</h3><span class="cost"><small>from</small>£250</span></div><span class="size">40 × 30 cm</span><p>Room for more detail, or for two subjects.</p></div>
+<div class="price"><svg viewBox="0 0 120 80" aria-hidden="true"><rect x="10" y="10" width="100" height="60"/></svg><div class="top"><h3>Large</h3><span class="cost"><small>from</small>£350</span></div><span class="size">50 × 30 cm</span><p>A statement piece with space for fine detail.</p></div>
+<div class="price"><svg viewBox="0 0 120 80" aria-hidden="true"><rect x="22" y="12" width="76" height="56"/></svg><div class="top"><h3>Custom</h3><span class="cost alt">On request</span></div><span class="size">Your dimensions</span><p>Need something different? Tell me and I'll quote for it.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about" style="padding-top:24px">
+<div class="wrap about">
+<div class="img"><img src="images/geopfp.jpg" alt="George Edgell in the studio" loading="lazy" decoding="async"></div>
+<div class="text">
+<h2>Hello, I'm George</h2>
+<p class="lede">
+
+  I'm a UK-based artist who paints the people, pets and places that matter most. 
+  
+  I studied BA Fine Art at Camberwell College of Arts, University of the Arts London (UAL), and have exhibited in galleries, hotels and private collections across London and the UK.
+  
+  My commissions focus on capturing the character, expression and small details that make a subject special. From joyful gifts to meaningful memorial pieces, each painting is made to be treasured.
+  
+  When I’m not painting, you’ll usually find me behind a drum kit!</p>
+<a class="ig" href="https://www.instagram.com/georgeedgellart/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>Follow my work on Instagram</a>
+</div>
+</div>
+</section>
+
+<section id="faq" style="padding-top:24px">
+<div class="wrap faq">
+<div class="intro"><h2>Questions</h2><p>Can't find your answer? Just ask.</p><a href="#contact">Get in touch</a></div>
+<div class="faq-list">
+<details class="faq-item"><summary>What photographs should I send?</summary><p>Clear, well-lit photographs, ideally head-on and taken around eye level in natural light. If you're unsure, send a few and I'll help choose.</p></details>
+<details class="faq-item"><summary>Can you work from several photographs?</summary><p>Yes. I can combine people, pets or details from separate photographs, which is ideal when no single photo shows everyone together.</p></details>
+<details class="faq-item"><summary>What happens after I enquire?</summary><p>We'll talk through your idea, photographs, size and any important details. I'll then confirm the composition, timeframe, personal quote and payment schedule before the commission is booked.</p></details>
+<details class="faq-item"><summary>How long will it take?</summary><p>It depends on size, number of subjects and my current commission list. If you need it by a particular date, say so when you enquire and I'll tell you what's possible.</p></details>
+<details class="faq-item"><summary>Can I commission a painting as a gift?</summary><p>Absolutely. If you don't have the photographs ready yet, we can discuss a gift voucher or a contribution towards a future commission.</p></details>
+<details class="faq-item"><summary>How are paintings delivered?</summary><p>Finished paintings are securely packaged. UK and international delivery, plus any framing, can be arranged as part of your quote.</p></details>
+<details class="faq-item"><summary>Can I make changes once painting has started?</summary><p>The composition and key details are agreed beforehand. Substantial changes after work begins may affect the price or timeframe, so it's best to share important preferences at the start.</p></details>
+</div>
+</div>
+</section>
+
+<section id="contact" style="padding-top:24px">
+<div class="wrap">
+<div class="contact contact-box">
+<div class="intro">
+<h2>Tell me about your painting</h2>
+<p class="lede">Share what you'd love painted and I'll reply with ideas for size, composition and a personal quote.</p>
+<a class="mail" href="mailto:georgeedgellstudio@gmail.com">georgeedgellstudio@gmail.com</a>
+</div>
+<form action="https://formspree.io/f/mgaorqpa" method="post">
+<input type="hidden" name="_subject" value="New painting enquiry from the website">
+<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+<div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<fieldset><legend>What's it of? (choose any)</legend><div class="chips">
+<label class="chip"><input type="checkbox" name="subject" value="Person"><span>Person</span></label>
+<label class="chip"><input type="checkbox" name="subject" value="Pet"><span>Pet</span></label>
+<label class="chip"><input type="checkbox" name="subject" value="Place"><span>Place</span></label>
+</div></fieldset>
+<fieldset><legend>Number of subjects</legend><div class="chips">
+<label class="chip"><input type="radio" name="count" value="1"><span>1</span></label>
+<label class="chip"><input type="radio" name="count" value="2"><span>2</span></label>
+<label class="chip"><input type="radio" name="count" value="3+"><span>3 or more</span></label>
+</div></fieldset>
+<fieldset><legend>Size</legend><div class="chips">
+<label class="chip"><input type="radio" name="scale" value="30 x 20 cm"><span>30 × 20 cm</span></label>
+<label class="chip"><input type="radio" name="scale" value="40 x 30 cm"><span>40 × 30 cm</span></label>
+<label class="chip"><input type="radio" name="scale" value="50 x 30 cm"><span>50 × 30 cm</span></label>
+<label class="chip"><input type="radio" name="scale" value="Custom"><span>Custom</span></label>
+</div></fieldset>
+<fieldset><legend>Timeframe</legend><div class="chips">
+<label class="chip"><input type="radio" name="deadline" value="Within 6 weeks"><span>Within 6 weeks</span></label>
+<label class="chip"><input type="radio" name="deadline" value="Within 3 months"><span>Within 3 months</span></label>
+<label class="chip"><input type="radio" name="deadline" value="No rush"><span>No rush</span></label>
+</div></fieldset>
+<div class="field"><label for="date">Need it by a specific date? (optional)</label><input id="date" name="date" type="date"></div>
+<div class="field"><label for="idea">Anything else I should know?</label><textarea id="idea" name="idea" rows="4"></textarea></div>
+<div class="estimate" aria-live="polite"><span class="label">Your guide price</span><div class="amount" id="estimate-amount">Choose a size to see a guide price</div><p class="note" id="estimate-note">A guide only. Your final quote depends on the level of detail.</p><input type="hidden" name="estimate" id="estimate-field" value=""></div>
+<button class="btn" type="submit">Send enquiry</button>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer><div class="wrap"><b>George Edgell Paintings</b><span>© 2026 · Brighton, UK</span><div class="links"><a href="https://www.instagram.com/georgeedgellart/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="#faq">FAQ</a></div></div></footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded commission gallery"><button class="lightbox-close" type="button" aria-label="Close gallery">×</button><button class="lightbox-prev" type="button" aria-label="Previous painting">‹</button><div class="lightbox-stage"><img id="lightbox-image" src="" alt=""><div class="lightbox-caption" id="lightbox-caption"></div></div><button class="lightbox-next" type="button" aria-label="Next painting">›</button><div class="lightbox-count" id="lightbox-count" aria-live="polite"></div></div>
+<button class="back-top" id="backTop" type="button" aria-label="Scroll to top">↑</button>
+
+<script>(()=>{
+const items=[...document.querySelectorAll('.gallery-trigger')],lb=document.getElementById('lightbox'),im=document.getElementById('lightbox-image'),cap=document.getElementById('lightbox-caption'),cnt=document.getElementById('lightbox-count'),close=lb.querySelector('.lightbox-close'),prev=lb.querySelector('.lightbox-prev'),next=lb.querySelector('.lightbox-next'),top=document.getElementById('backTop');
+const slides=items.map(b=>{const i=b.querySelector('img'),f=b.closest('figure');return{src:i.currentSrc||i.src,alt:i.alt,title:f.querySelector('figcaption').childNodes[0].textContent.trim(),type:f.querySelector('figcaption span').textContent.trim()}});
+let n=0,focus=null;
+const show=x=>{n=(x+slides.length)%slides.length;const s=slides[n];im.src=s.src;im.alt=s.alt;cap.textContent=s.title+' · '+s.type;cnt.textContent=(n+1)+' / '+slides.length};
+const open=x=>{focus=document.activeElement;show(x);lb.classList.add('is-open');document.body.classList.add('modal-open');close.focus()};
+const shut=()=>{lb.classList.remove('is-open');document.body.classList.remove('modal-open');im.removeAttribute('src');focus&&focus.focus()};
+items.forEach((b,i)=>b.addEventListener('click',()=>open(i)));
+close.addEventListener('click',shut);prev.addEventListener('click',()=>show(n-1));next.addEventListener('click',()=>show(n+1));
+lb.addEventListener('click',e=>{if(e.target===lb)shut()});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('is-open'))return;if(e.key==='Escape')shut();else if(e.key==='ArrowLeft'){e.preventDefault();show(n-1)}else if(e.key==='ArrowRight'){e.preventDefault();show(n+1)}});
+addEventListener('scroll',()=>top.classList.toggle('is-visible',scrollY>500),{passive:true});
+top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const g=document.querySelector('.gallery'),gp=document.querySelector('.gallery-prev'),gn=document.querySelector('.gallery-next');
+const upd=()=>{gp.disabled=g.scrollLeft<4;gn.disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-4};
+gp.addEventListener('click',()=>g.scrollBy({left:-g.clientWidth*.8,behavior:'smooth'}));gn.addEventListener('click',()=>g.scrollBy({left:g.clientWidth*.8,behavior:'smooth'}));
+g.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();</script>
+<script>
+(()=>{
+  // ---- EDIT PRICES HERE (£) ----
+  const SIZE_PRICE={"30 x 20 cm":150,"40 x 30 cm":250,"50 x 30 cm":350};
+  const EXTRA_SUBJECTS={"1":0,"2":75,"3+":150};
+  // -------------------------------
+  const form=document.querySelector('#contact form');
+  if(!form)return;
+  const amount=document.getElementById('estimate-amount');
+  const note=document.getElementById('estimate-note');
+  const field=document.getElementById('estimate-field');
+  const val=n=>{const el=form.querySelector('input[name="'+n+'"]:checked');return el?el.value:null};
+  function update(){
+    const size=val('scale'),count=val('count');
+    if(size==='Custom'){
+      amount.textContent='Custom size: quoted on request';
+      note.textContent="Tell me the dimensions below and I'll send a personal quote.";
+      field.value='Custom size, quote on request';return;
+    }
+    if(!size){
+      amount.textContent='Choose a size to see a guide price';
+      note.textContent='A guide only. Your final quote depends on the level of detail.';
+      field.value='';return;
+    }
+    const total=SIZE_PRICE[size]+(count?EXTRA_SUBJECTS[count]:0);
+    const more=count==='3+'?' or more':'';
+    amount.textContent='From £'+total+more;
+    note.textContent=count?'A guide only. Your final quote depends on the level of detail.':'Select the number of subjects to refine this. A guide only.';
+    field.value='From £'+total+more+' (guide)';
+  }
+  form.addEventListener('change',update);
+  update();
+})();
+</script>
+</body>
+</html>
